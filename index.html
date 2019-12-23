@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+
+  <title>PhD Experience &amp; Publications</title>
+<style>
+#header {
+  font: 42px 'Lato',sans-serif;
+  color: #525252;
+  padding-left: 110px;
+  padding-top: 40px;
+}
+
+#subheader {
+  font: 400 24px 'Lato',sans-serif;
+  color: #525252;
+  padding-left: 110px;
+  padding-top: 20px;
+  width: 840px;
+}
+
+#hint {
+  font: 300 14px 'Lato',sans-serif;
+  color: #525252;
+  padding-left: 110px;
+  padding-top: 10px;
+  width: 840px;
+}
+
+body {
+   font: 14px 'Lato',sans-serif;
+
+
+}
+
+.axis-label {
+  font: 300 14px 'Lato',sans-serif;
+  letter-spacing: 1.5px;
+  color: #525252;
+}
+.axis path, .axis line {
+  fill: none;
+  stroke: #525252;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+  letter-spacing: 2px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+
+<script type="text/javascript" src="d3resume.js"></script>
+<div id="header">Mit's PhD Journey</div>  <!--  -->
+<div id="subheader">PhD Title: "Visual Analysis of E-mail Communication to Support Digital Forensics & E-discovery Investigation in Organisations"</div>
+<div id="hint"><i>Hint: Hover over a shape in the timeline to view info, click the shape to open a related link.</i></div>
+<div id="experience"></div>
+<div id="footer"> </div>
+
+<script>
+
+    var resume = new d3Resume({
+        wrapperSelector: "#experience",
+        dataUrl: 'resume.json'
+      });
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53090028-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
