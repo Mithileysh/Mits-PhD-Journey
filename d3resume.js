@@ -1,4 +1,4 @@
-/*! D3-resume v1.3.0 https://github.com/glena/d3-resume | Germán lena https://github.com/glena/ */
+/*! Resume Code */
 
 var d3Resume = function(_config){
 
