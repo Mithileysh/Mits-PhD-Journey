@@ -1,3 +1,3 @@
 # Mit's PhD Timeline
 
-Demo: 
+Link to Visualise the timeline: https://mithileysh.github.io/Mits-PhD-Timeline/.
