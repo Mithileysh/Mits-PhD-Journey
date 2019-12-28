@@ -3,7 +3,7 @@
 var d3Resume = function(_config){
 
 	var lastTimeout = null;
-	var formatToShow = d3.time.format("%m/%d/%Y");
+	var formatToShow = d3.time.format("%d/%m/%Y");
 	var format = d3.time.format("%Y-%m-%d");
 	var parseDate = format.parse;
 	var svg = null;
@@ -78,16 +78,16 @@ var d3Resume = function(_config){
 
 		graphContainer.append('text')
 				.classed('axis-label',true)
-				.text('PhD Experience')
+				.text('Project Phases')
 				.style("text-anchor", "center")
-				.attr("transform", "translate("+[25,- 55]+")");
+				.attr("transform", "translate("+[25,- 75]+")");
 				// .attr("transform", "translate("+[25,- 55]+") rotate(-90)");
 
 		graphContainer.append('text')
 				.classed('axis-label',true)
-				.text('Publications')
+				.text('Community Engagement / Publications')
 				.style("text-anchor", "center")
-				.attr("transform", "translate("+[25,100]+")");
+				.attr("transform", "translate("+[25,75]+")");
 				// .attr("transform", "translate("+[25,60]+") rotate(-90)");
 
 		loadItems(svg, graphContainer, data.experience, "experience", -1, height / 10);
@@ -186,7 +186,7 @@ var d3Resume = function(_config){
 		// 														return text;
 		// 													});
 
-		
+
 		var descriptionWrapper = gInfo.selectAll('text.description')
 				.data(function(d, i) {
 					var position = 100;
@@ -203,7 +203,7 @@ var d3Resume = function(_config){
 		addItemDetail(descriptionWrapper, "16px", function(d) {return "translate(0,"+d.position+")";},
 			"300","#000000",function(d){return d.text;});
 
-		
+
 
 
 		graphContainer
@@ -280,7 +280,7 @@ var d3Resume = function(_config){
 		d3.selectAll(".axis").remove();
 		d3.selectAll("graph-container").remove();
 		d3.selectAll(".axis-label").remove();
-		
+
 
 		xAxis = d3.svg.axis()
 			.scale(x)
